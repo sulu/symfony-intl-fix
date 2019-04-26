@@ -28,7 +28,7 @@ symfony/intl will endup in a infinite loop.
 
 This package will overwrite the Symfony [Locale](https://github.com/symfony/symfony/blob/master/src/Symfony/Component/Intl/Locale.php)
 to avoid this infinite loop. Projects using Symfony 3 or 4 should just update there symfony package.
-This fix is maily provided for Symfony 2 users.
+This fix is mainly provided for Symfony 2 projects.
 
 **What was changed to fix the issue?**
 
