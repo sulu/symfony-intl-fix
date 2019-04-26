@@ -23,7 +23,7 @@ To avoid problems you should also exclude default Locale class from the classmap
  - `^7.2.17`
  - `^7.1.28`
 
-If you use when of the above PHP Version and a older Symfony version than `^3.4.24` or `^4.2.7`
+If you use one of the above PHP Version and a older Symfony Intl version than `^3.4.24` or `^4.2.7`
 symfony/intl will endup in a infinite loop.
 
 This package will overwrite the Symfony [Locale](https://github.com/symfony/symfony/blob/master/src/Symfony/Component/Intl/Locale.php)
