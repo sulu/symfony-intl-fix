@@ -1,5 +1,5 @@
 {
-    "name": "l91/symfony-intl-fix",
+    "name": "sulu/symfony-intl-fix",
     "description": "Provides the symfony/intl fix for new php version also for symfony 2.8",
     "type": "library",
     "license": "MIT",
