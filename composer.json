@@ -1,0 +1,20 @@
+{
+    "name": "l91/symfony-intl-fix",
+    "description": "Provides the symfony/intl fix for new php version also for symfony 2.8",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexander Schranz",
+            "email": "alexander@sulu.io"
+        }
+    ],
+    "require": {
+        "php": "^7.2"
+    },
+    "autoload": {
+        "files": [
+            "Locale.php"
+        ]
+    }
+}
