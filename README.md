@@ -1,9 +1,14 @@
-# Fix symfony/intl for newer Php Versions (^7.3.4, ^7.2.17, ^7.1.28)
+# Fix symfony/intl for newer PHP Versions
 
-As mention in https://github.com/symfony/symfony/issues/31089
-Symfony can end up in a infinite loop.
+**Effected PHP Versions:**
 
-A fix for this issue is only provided in Symfony ^3.4.24 and  ^4.2.7
+ - `^7.3.4`
+ - `^7.2.17`
+ - `^7.1.28`
 
-For older Symfony versions you can use this fix. It will overwrite the Locale class
-of the Symfony to fix the infinite loop problem.
+If you use when of the above PHP Version and a older Symfony version than `^3.4.24` or `^4.2.7`
+symfony/intl will endup in a infinite loop.
+
+This package will overwrite the Symfony [Locale](https://github.com/symfony/symfony/blob/master/src/Symfony/Component/Intl/Locale.php)
+to avoid this infinite loop. Projects using Symfony 3 or 4 should just update there symfony package.
+This fix is maily provided for Symfony 2 users.
