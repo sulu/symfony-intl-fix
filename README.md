@@ -1,5 +1,22 @@
 # Fix symfony/intl for newer PHP Versions
 
+```bash
+composer require sulu/symfony-intl-fix
+```
+
+To avoid problems you should also exclude default Locale class from the classmap in your `composer.json`:
+
+```
+{
+    "autoload": {
+        "exclude-from-classmap": [
+             "vendor/symfony/intl/Locale.php",
+             "vendor/symfony/symfony/src/Symfony/Component/Intl/Locale.php"
+        ]
+    }
+}
+```
+
 **Effected PHP Versions:**
 
  - `^7.3.4`
